@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.icons i{
+    position: fixed;
+    font-size: 50px;
+    color: rgb(40, 112, 213);
+    z-index: 10;
+    cursor: pointer;
+    
+    
+}
+
+.ico:hover,.ico2:hover,.ico3:hover,.ico4:hover,.ico5:hover{
+    color: rgb(255, 255, 255);
+}
+/* .ico2:hover{
+    color: rgb(255, 255, 255);
+} */
+.cardin::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    opacity: 0;
+
+}
+.cardin::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    opacity: 0;
+
+}
+.ficon{
+    transition: 1s;
+}
+.focus1:focus:hover .ficon,.focus2:focus:hover .ficon,.focus3:focus:hover .ficon{
+    
+    transform: rotatex(180deg);
+}
+.cardin:hover::after,.card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+.cardo{
+    transition: 1s;
+    border-radius: 15px;
+    opacity: .95;
+}
+.cardo:hover{
+    transform: scale(.9,.9);
+    opacity: 1;
+}
+.trans{
+    transition: 1s;
+}
+.cardo:hover .trans{
+    transform: scale(.8,.8);
+
+}
+.btcop{
+    position:relative
+}
+.btcop:before{
+    content: "click to copy";
+    position: absolute;
+    display: none;
+    width: 90px;
+    height: 30px;
+    top: 35px;
+    left: 60px;
+    border-radius: 5px;
+    background-color: rgb(111,82,164,.9);
+    color: rgb(255 255 255);
+    transition: 1s;
+}
+
+.btcop:after {
+    content: "text copied";
+    position: absolute;
+    display: none;
+    width: 80px;
+    height: 30px;
+    top: 35px;
+    left: 60px;
+    border-radius: 5px;
+    background-color: rgb(111,82,164,.9);
+    color: rgb(255 255 255);
+    transition: 1s;
+}
+.btcop:hover::before{
+    display: block;
+}
+.btcop:focus::before{
+    display: none;
+}
+.btcop:hover::after{
+    display: none;
+}
+.btcop:focus:hover:after{
+    display:block;
+}
+.con{
+    width: 300px;
+    height: 250px;
+    background-color: rgba(225, 216, 216, 0.589);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-top: 10px;
+}
+.btn_link{
+    background-image: url(../images/linked.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    opacity: 1;
+    transition: .6s;
+    cursor: pointer;
+}
+.btn_link:hover,.btn_link2:hover,.btn_link3:hover,.btn_link4:hover{
+    opacity: .6;
+
+}
+.btn_link2{
+    background-image: url(../images/black-3d-instagram-icon-aesthetic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    opacity: 1;
+    transition: .6s;
+    cursor: pointer;
+}
+.btn_link3{
+    background-image: url(../images/whats\ app.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    opacity: 1;
+    transition: .6s;
+    cursor: pointer;
+}
+.btn_link4{
+    background-image: url(../images/twitter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    opacity: 1;
+    transition: .6s;
+    cursor: pointer;
+}
+.circle{
+    height: 70px;
+    width: 250px; 
+}
+.links_footer{
+    margin-left: 350px ;
+    margin-top: 30px;
+    color: rgb(195, 100, 22);
+    cursor: pointer;
+    text-align: center;
+}
+.links_footer p:hover{
+    color: rgb(255, 255, 255);
+}
+.imgg1{
+    clip-path: polygon(-7% -2%, 51% -5%, 79% 101%, 0% 100%);
+    width: 500px;
+    height: 415px;
+    margin-left: -30px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: -65px;
+    position: absolute;
+    z-index: 9;
+}
+.m1{
+    margin-left: 350px;
+}
+.imgg{
+    clip-path: polygon(42% -3%, 100% 0%, 109% 104%, 0% 100%);
+    width: 400px;
+    height: 415px;
+    margin-left: 1060px;
+    border-radius: 0px 20px 20px 0px;
+    margin-top: -65px;
+    position: absolute;
+    z-index: 9;
+}
+@media only screen and (max-width: 600px){
+    
+    .car{
+        position: relative;
+        height: 4400px;
+    }
+    .card1{
+        position: absolute;
+        padding-left: 12px;
+
+        
+        
+    }
+    .card2{
+        position: absolute;
+        padding-top: 1450px;
+        padding-left: 12px;
+        
+    }
+    .card3{
+        position: absolute;
+        padding-top: 2900px;
+        padding-left: 12px;
+
+        
+    }
+    .hover-container{
+        position: relative;
+        height: 1300px;
+    }
+    .cardo1{
+        position: absolute;
+        margin-left: 12px;
+    }
+    .cardo2{
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 12px;
+
+    }
+    .cardo3{
+        position: absolute;
+        margin-top: 850px;
+        margin-left: 12px;
+
+    }
+    .icon{
+        position: relative;
+        height: 1100px;
+        
+    }
+    .ic1{
+        position: absolute;
+        margin-left: 80px;
+    }
+    .ic2{
+        position: absolute;
+        margin-top: 270px;
+        margin-left: 80px;
+
+    }
+    .ic3{
+        position: absolute;
+        margin-top: 540px;
+        margin-left: 80px;
+
+    }
+    .ic4{
+        position: absolute;
+        margin-top: 820px;
+        margin-left: 80px;
+
+    }
+    .imgg1-media{
+        width: 418px;
+        height: 305px;
+        margin-top: -30px;
+        margin-left: -15px;
+        border-radius: 20px 20px 20px 20px;
+        /* position: absolute; */
+        /* z-index: 9; */
+        clip-path: polygon(-6% -1%, 100% 0%, 128% 100%, -5% 107%);
+    }
+    .m1-media{
+        margin-top: 300px;
+        margin-left: -10px;
+        /* position: pbsolute; */
+        
+    }
+    .footer-media{
+        position: relative;
+        height: 950px;
+        
+        
+    }
+    
+    .line1{
+        position: absolute;
+        width: 50px;
+        /* margin-top: 50px; */
+    }
+    .content1{
+        position: absolute;
+        
+        
+    }
+    .liner1{
+        position: absolute;
+        width: 120px;
+        top: 100px;
+    }
+    .cont1{
+        position: absolute;
+        padding-top: 110px;
+        padding-left: 10px;
+    }
+    .line2{
+        position: absolute;
+        width: 50px;
+        top: 240px;
+        
+
+
+        /* margin-top: 50px; */
+    }
+    .content2{
+        position: absolute;
+        padding-top: 250px;
+    }
+    .liner2{
+        position: absolute;
+        top: 340px;
+    }
+    .cont2{
+        position: absolute;
+        padding-top: 350px;
+        margin-left: -280px;
+    }
+    .line3{
+        position: absolute;
+        width: 50px;
+        top: 500px;
+
+        /* margin-top: 50px; */
+    }
+    .content3{
+        position: absolute;
+        padding-top: 520px;
+    }
+    
+    .liner3{
+        position: absolute;
+        top: 610px;
+    }
+    .cont3  {
+        position: absolute !important ;
+        padding-top: 630px ;
+        right: 100px;
+        width: 200px;
+        
+    }
+    
+    
+    .big-line{
+        position: absolute;
+        top: 800px;
+        width: 95% !important;
+        
+       
+    }
+    .end-cont{
+        position: absolute;
+        margin-top: 815px;
+        
+    }
+    .end-cont h3{
+        font-size: 16px;
+    }
+    .big-line2{
+        position: absolute;
+        top: 900px;
+        width: 95% !important;
+    }
+    
+    
+        
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark navv" style="position: fixed; z-index: 10; width: 100%;">
+        <img src="images/168104-travel-icon-free-download-png-hq.png" alt=""width="60px" height="60px">
+        <!-- Brand -->
+        <a class="navbar-brand ml-2" href="#"style="background: #299fff;
+        background: linear-gradient(to top, #958b9d 40%, #3aabdf 40%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">Travelling</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+           <!-- Links -->
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item text-white" style="font-size: 18px;color: rgb(251, 253, 255);">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">about</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                Countries
+              </a>
+              <div class="dropdown-menu bg-light">
+                <a class="dropdown-item text-primary" href="#">America</a>
+                <a class="dropdown-item text-primary" href="#">Germany</a>
+                <a class="dropdown-item text-primary" href="#">France</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="button">Search</button>
+            <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#myModal">
+                Login
+              </button>
+              
+             
+          </form>
+        </div>
+      </nav>
+      
+       <!-- The Modal -->
+       <div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="modal-title" aria-hidden="true" >
+        <div class="modal-dialog " >
+          <div class="modal-content bg-dark">
+      
+            <!-- Modal Header -->
+            <div class="modal-header bg">
+              <h4 class="modal-title text-primary">LoGiN</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body" >    
+                <label for="modal-email" class="form-label justify-content-start text-white ">Email address:</label>
+                <input type="email" class="form-control  text-white" style="background-color: #a1a7ab;" placeholder="Enter email" id="email">                   
+                <label for="modal-pwd" class="form-label justify-content-start text-white">Password:</label>
+                <input type="password" class="form-control " style="background-color: #a1a7ab;" placeholder="Enter password" id="pwd">
+                <div class="custom-control custom-switch ml-2">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label text-primary" for="customSwitch1">Remember me</label>
+                  </div>
+                    
+              </div>
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-between ">
+              <button type="submit" class="btn btn-primary ">Submit</button>
+              <button type="button" class="btn btn-primary " data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end mr-4 icons">>
+        <i class="fab fa-facebook-square ico  "style="margin-top:200px;"></i>
+        <i class="fab fa-whatsapp-square ico2"style="margin-top: 280px;"></i>
+        <i class="fab fa-twitter-square ico3"style="margin-top: 360px;"></i>
+        <i class="fab fa-linkedin ico4"style="margin-top: 440px;"></i>
+        <i class="fab fa-instagram-square ico5"style="margin-top: 510px;"></i>
+        
+      </div>
+      
+      <section >
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0"  class="active bg-dark"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner ">
+              <div class="carousel-item active ">
+                <img src="images/Egypt..jpg" alt="Los Angeles" width="100%" height="700vh">
+                <div class="carousel-caption" style="background-color: #0000005f; border-radius: 25px; height: 180px;">
+                  <h3>Cairo</h3>
+                  <p>Cairo is always so much fun!</p>
+                  <button class="btn btn-primary mb-2">View More</button>
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/paris.jpg" alt="Chicago" width="100%" height="700vh">
+                <div class="carousel-caption" style="background-color: #0000005f; border-radius: 25px;height: 180px;">
+                  <h3>Paris</h3>
+                  <p>Paris is always so much fun!</p>
+                  <button class="btn btn-primary mb-2">View More</button>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/london.jpg" alt="New York" width="100%" height="700vh">
+                <div class="carousel-caption" style="background-color: #0000005f; border-radius: 25px;height: 180px;">
+                  <h3>London</h3>
+                  <p>London is always so much fun!</p>
+                  <button class="btn btn-primary mb-2">View More</button>
+
+                </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+
+      </section>
+      <section style="background-color: #000000;">
+        <div class="container-fluid pb-3" style="background-color: rgb(0, 0, 0); font-size: 18px; ">
+          <h2 class="text-white">welcome</h2>
+          <p  style="color: #b9b2b2;">You learned from the previous chapter that Bootstrap requires a containing element to wrap site contents.
+            Containers are used to pad the content inside of them, and there are two container classes available: </p><br>
+          <button type="button" class="btn btn-primary" style="font-size: 20px;">Learn More</button>
+        </div>
+        <hr>
+        <div class="container-fluid mt-3  pt-5 pb-5 bg-primary d-flex justify-content-center text-white" style="font-size: 25px; font-weight: 700;">
+          The Most Famous Tourist Places
+        </div>
+        <hr>
+        <!-- carddd -->
+        <div id="accordion" class="mt-3">
+          <div class="card">
+              <a class="btn bs text-white bg-dark d-flex justify-content-between focus1" style="text-align:left;height:50px" data-toggle="collapse" href="#collapseOne">
+                  <h5 style="margin-top:5px;display:inline-block">The Weekend Break</h5>
+                  <i class="fas fa-angle-double-down fa-1x ficon " style="line-height:2.2;color:rgb(49, 112, 207)"></i>
+              </a>
+              <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-white" style="background-color:#191818">
+                    So you love to travel, but you also love your 9-5 job and you don’t want to give it all up to travel around the world for 6 months? Don’t worry, you can still travel by taking short weekend getaways.
+                     Look for cheap airfare deals, fly out on Friday evening and return on Sunday and make the most of the short time you have.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <a class="collapsed bs btn text-white bg-dark d-flex justify-content-between focus2" style="text-align:left;height:50px" data-toggle="collapse" href="#collapseTwo">
+                  <h5 style="margin-top:5px;display:inline-block">The Package Holiday</h5>
+                  <i class="fas fa-angle-double-down fa-1x ficon float-end " style="line-height:2.2;color:rgb(49, 112, 207) ;"></i>
+              </a>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-white" style="background-color:#191818 ;">
+                    The beauty of a package holiday is that all the work is done for you. You simply pick which beautiful beach
+                     you would like to be lounging on and your travel agent will make sure that everything is arranged so that your hardest decision is whether to order a Pina Colada or a Margarita from your sun lounger.
+                  </div>
+              </div>
+          </div>
+        </div>
+          <div class="card">
+              <a class="collapsed bs btn text-white bg-dark d-flex justify-content-between focus3" style="text-align:left;height:50px" data-toggle="collapse" href="#collapseThree">
+                  <h5 style="margin-top:5px;display:inline-block">The Group Tour</h5>
+                  <i class="fas fa-angle-double-down fa-1x ficon float-end" style="line-height:2.2;color:rgb(49, 112, 207)"></i>
+              </a>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body text-white" style="background-color:#191818">
+                    Group tours can describe busloads of 20-year-olds who want to drink and party to groups of 80 year olds who want to visit historical monuments and everything in between. No matter what your interest, from art history to ghosts to cheese-making to fishing,
+                     there is a group tour out there for you. Your itinerary is usually packed with many different activities so you will never be bored.
+                  </div>
+              </div>
+          </div>
+      </div>
+        <hr>
+        <!-- translaate -->
+        <div class="container-fluid mt-2  pt-3 pb-3 bg-primary d-flex justify-content-center text-white" style="font-size: 25px; font-weight: 700;">
+          Translate From English to Arabic
+        </div>
+        <div class="container-fluid  pt-3 pb-3  text-white" style="font-size: 25px; font-weight: 700; background-color: #020202;">
+          write and translate <span class="text-primary">press here</span> <br>
+          
+          <button type="button" class="btn btn-primary mb-2 btcop" id="btn_copy">copy</button>
+          <textarea class="form-control bg-dark text-white" rows="5" id="comment" placeholder="translate"></textarea>
+        </div>
+        <hr>
+        <!-- 2222 -->
+        <div class="container-fluid   pt-3 pb-3 bg-primary d-flex justify-content-center text-white" style="font-size: 25px; font-weight: 700;background-color: #020202;">
+          Translate From English to Arabic
+        </div>
+        <div class="container-fluid  pt-3 pb-3  text-white" style="font-size: 25px; font-weight: 700;">
+          write and translate <span class="text-primary">press here</span> <br>
+          
+          <button type="button" class="btn btn-primary mb-2 btcop"  id="btn_copy2" >copy</button>
+          <textarea class="form-control bg-dark text-white" rows="5" id="comment" placeholder="translate"></textarea>
+        </div>
+        <hr>
+        <!-- 3333 -->
+        <div class="container-fluid  pt-3 pb-3 bg-primary d-flex justify-content-center text-white" style="font-size: 25px; font-weight: 700;background-color: #020202;">
+          Translate From English to Arabic
+        </div>
+        <div class="container-fluid  pt-3 pb-3  text-white" style="font-size: 25px; font-weight: 700;">
+          write and translate <span class="text-primary">press here</span> <br>
+          
+          <button type="button" class="btn btn-primary mb-2 btcop" id="btn_copy3">copy</button>
+          <textarea class="form-control bg-dark text-white" rows="5" id="comment" placeholder="translate"></textarea>
+        </div>
+
+      </section>
+      <!-- 3333 -->
+      <section>
+        <!-- 1111 attachment -->
+        <div class="container-fluid-xl  pt-5  pb-5" style="background-image:url(./images/0ba17ffc580aa6ff51606bc6ca8d8f47.jpg) ;background-size: cover;background-attachment: fixed;"></div>
+        <div class="container-fluid  d-flex justify-content-center pt-3 pb-3 bg-dark "style="font-size: 30px; font-weight: 700;">
+         <h2 style="background: #299fff;
+         background: linear-gradient(to top, #958b9d 30%, #3aabdf 49%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;">Famous Places</h2> 
+        </div>
+      </section>
+      <section class="container-fluid d-flex justify-content-between car" style="background-color: #000000;">
+        
+        <div class="d-flex flex-column mt-3 card1">
+          <div class="card cardin bg-dark text-white" >
+            <img class="card-img-top" src="images/0ce4e3178405f186ef7bdb3cbd135c11.jpg" style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Saudi Arabia</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+          <div class="card cardin mt-3 bg-dark text-white " >
+            <img class="card-img-top" src="images/0ba17ffc580aa6ff51606bc6ca8d8f47.jpg" style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Dubai</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column mt-3 card2">
+          <div class="card cardin bg-dark text-white" style="width:400px">
+            <img class="card-img-top" src="images/19e6062529e3adf4458451b410e2760a.jpg" style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Germany</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+          <div class="card cardin mt-3 bg-dark text-white" >
+            <img class="card-img-top" src="images/2255d85d41a8e8071aeb0cae49ea1402.jpg"style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">India</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column mt-3 card3" >
+          <div class="card cardin bg-dark text-white " style="width:400px ;height: 700px;">
+            <img class="card-img-top" src="images/8b55538a915e7ebdb79e4c7648124f94.jpg" style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Spain</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+          <div class="card cardin mt-3 mb-3 bg-dark text-white">
+            <img class="card-img-top" src="images/f50a0ad58446c794154025d62b1e12fd.jpg" style="width:400px ;height: 600px;" alt="Card image">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Türkiye</h4>
+              <a href="#" class="btn btn-primary"style="z-index: 9;">View More</a>
+              </div>
+              
+              <p class="card-text">visit this fantastic country</p>
+              
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!-- 2222222 attachment -->
+      <div class="container-fluid-xl  pt-5  pb-5" style="background-image:url(./images/paris.jpg) ;background-size: cover;background-attachment: fixed;">  </div>
+      <!-- gradient -->
+      <div class="container-fluid  d-flex justify-content-center pt-3 pb-3 bg-dark "style="font-size: 30px; font-weight: 700;">
+        <h2 style="background: #ad7bd8;
+        background: linear-gradient(to top, #958b9d 30%, #df3acc 49%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">Thank you</h2> 
+      </div>
+      <!-- 2 hover -->
+     <div class="container-fluid d-flex justify-content-between pb-3 pt-3 hover-container" style="background-color: #000000;">
+      <div class="card cardo cardo1" style="background-image: url(./images/2وظائف-موظف-استقبال-في-دبي.jpg); width: 400px; height: 400px; background-size: cover; background-repeat: no-repeat;">
+        <div class="over-lay" style="border-radius: 15px; background-color: rgba(0, 0, 0, 0.437); width: 400px; height: 400px; color: #5d5a5c;" >
+          <div class="trans">
+            <h2 style="margin-top: 10px; color: #ece5e5;">All thanks and appreciation</h2>
+            <i class="far fa-clock text-white"></i><span class="text-white">29/10/2002</span>
+          </div>
+          <div style="margin-top:150px ;margin-left: 10px;">
+            <img src="images/2وظائف-موظف-استقبال-في-دبي.jpg" alt="" width="100px" height="100px" style="border-radius: 50%; display: block;">
+            <p style="color: white;">Nurhan Samy</p>
+            <p style="color: white;">Information system</p>
+          </div>
+  
+        </div>
+  
+       </div>
+       <!-- 222222222 -->
+       <div class="card cardo cardo2" style="background-image: url(./images/2موظفة.jpg); width: 400px; height: 400px; background-size: cover; background-repeat: no-repeat;">
+        <div class="over-lay" style="border-radius: 15px; background-color: rgba(0, 0, 0, 0.437); width: 400px; height: 400px; color: #5d5a5c;" >
+          <div class="trans">
+            <h2 style="margin-top: 10px; color: #ece5e5;">All thanks and appreciation</h2>
+            <i class="far fa-clock text-white"></i><span class="text-white">29/10/2002</span>
+          </div>
+          <div style="margin-top:150px ;margin-left: 10px;">
+            <img src="images/2موظفة.jpg" alt="" width="100px" height="100px" style="border-radius: 50%; display: block;">
+            <p style="color: white;">Laila Mar3y</p>
+            <p style="color: white;">Information system</p>
+          </div>
+  
+        </div>
+  
+       </div>
+       <!-- 3333333 -->
+       <div class="card cardo cardo3" style="background-image: url(./images/titre2.jpg); width: 400px; height: 400px; background-size: cover; background-repeat: no-repeat;">
+        <div class="over-lay" style="border-radius: 15px; background-color: rgba(0, 0, 0, 0.437); width: 400px; height: 400px; color: #5d5a5c;" >
+          <div class="trans">
+            <h2 style="margin-top: 10px; color: #ece5e5;">All thanks and appreciation</h2>
+            <i class="far fa-clock text-white"></i><span class="text-white">29/10/2002</span>
+          </div>
+          <div style="margin-top:150px ;margin-left: 10px;">
+            <img src="images/titre2.jpg" alt="" width="100px" height="100px" style="border-radius: 50%; display: block;">
+            <p style="color: white;">Youmna Elgezawy</p>
+            <p style="color: white;">Information system</p>
+          </div>
+  
+        </div>
+  
+       </div>
+  
+     </div>
+     <section class="container-fluid pt-3 pb-4" style="background-color: #000000;">
+      
+      <div class="jumbotron bg-dark"style="box-shadow: 8px 7px 8px 8px #888888;position: relative; border-radius: 20px; " >
+        <img src="images/87242c8f3e62622258d66c32914691c8.jpg" alt="doubai" class="imgg1  imgg1-media ">
+        <div class="m1 m1-media">
+          <h3 class="text-primary">Korea</h3>
+          <i class="far fa-calendar-alt text-white"></i> <span style="font-size: 15px; color: white;"> Mon,May 25th 2023</span>
+          <div style="width: 130px; height: 3px; background-color: #0a5ff3; border-radius: 30px; margin-top: 10px; " ></div>
+          <p style="margin-top: 10px; color: white;">Korea (Korean: 한국, Hanguk or 조선, Joseon) is a peninsular region in East Asia. Since 1945,
+             it has <br> been divided at or near the 38th parallel, with North Korea (Democratic People's Republic of Korea) <br>
+            comprising its northern half and South Korea  (Republic of Korea) comprising its southern half. </p>
+           <div style="margin-top: 90px; color: white;">
+            <button type="button" class="btn btn-primary"><i class="fas fa-tags"></i> Secondary</button>
+           <button type="button" class="btn btn-primary"><i class="fas fa-clock"></i> 55 min</button>
+           <button type="button" class="btn btn-primary"><i class="fab fa-google-play"></i> Secondary</button>
+
+           </div>
+        </div>
+
+        
+           
+      </div>
+      <!-- 22222222 -->
+      <div class="jumbotron mt-4 bg-dark"style="box-shadow: 8px 7px 8px 8px #888888;position: relative; border-radius: 20px;">
+        <img src="images/italy.jpg" alt="doubai" class="imgg imgg1-media ">
+        <div class="m1-media">
+          <h3 class="text-primary ">Italy</h3>
+        <i class="far fa-calendar-alt text-white"></i> <span style="font-size: 15px;color: white; "> Mon,May 25th 2023</span>
+        <div style="width: 130px; height: 3px; background-color: #0a5ff3; border-radius: 30px; margin-top: 10px; " ></div>
+        <p style="margin-top: 10px;color: white;"> Located in the middle of the Mediterranean Sea, it consists of a peninsula delimited by the Alps and surrounded by several islands. <br> Italy shares land borders
+           with France, Switzerland, Austria, Slovenia and the enclaved microstates of Vatican City 
+          and San Marino. <br> It has a territorial exclave in Switzerland, Campione, and some islands in the African Plate. </p>
+           <div style="margin-top: 90px;">
+            <button type="button" class="btn btn-primary"><i class="fas fa-tags"></i> Secondary</button>
+           <button type="button" class="btn btn-primary"><i class="fas fa-clock"></i> 55 min</button>
+           <button type="button" class="btn btn-primary"><i class="fab fa-google-play"></i> Secondary</button>
+
+           </div>
+
+        </div>
+
+        
+           
+      </div>
+      <!-- 3333 -->
+      <div class="jumbotron mt-4 bg-dark"style="box-shadow: 8px 7px 8px 8px #888888; position: relative; border-radius: 20px;">
+        <img src="images/china.jpg" alt="doubai" class="imgg1 imgg1-media  d-flex justify-content-end">
+        <div class="m1 m1-media">
+          <h3 class="text-primary">China</h3>
+        <i class="far fa-calendar-alt text-white"></i> <span style="font-size: 15px;color: white; "> Mon,May 25th 2023</span>
+        <div style="width: 130px; height: 3px; background-color: #0a5ff3; border-radius: 30px; margin-top: 10px; " ></div>
+        <p style="margin-top: 10px;color: white;">is a country in East Asia. It is the world's second-most populous country with a population exceeding 1.4 billion. 
+          <br> China spans the equivalent of five time zones and borders fourteen countries by land,[l] tied with Russia as having <br> the most of any country in the world. </p>
+           <div style="margin-top: 90px;">
+            <button type="button" class="btn btn-primary"><i class="fas fa-tags"></i> Secondary</button>
+           <button type="button" class="btn btn-primary"><i class="fas fa-clock"></i> 55 min</button>
+           <button type="button" class="btn btn-primary"><i class="fab fa-google-play"></i> Secondary</button>
+
+           </div>
+
+        </div>
+
+        
+           
+      </div>
+      <!-- 4444444444 -->
+      <div class="jumbotron  bg-dark " style="box-shadow: 8px 7px 8px 8px #888888; position: relative; border-radius: 20px;">
+        <img src="images/newyork.jpg" alt="doubai" class="imgg imgg1-media  d-flex justify-content-end">
+        <div class="m1-media">
+          <h3 class="text-primary">New York</h3>
+        <i class="far fa-calendar-alt text-white"></i> <span style="font-size: 15px;color: white; "> Mon,May 25th 2023</span>
+        <div style="width: 130px; height: 3px; background-color: #0a5ff3; border-radius: 30px; margin-top: 10px; " ></div>
+        <p style="margin-top: 10px;color: white;"> is the most populous city in the United States. With a 2020 population of 8,804,190 distributed over 300.46 <br> square miles (778.2 km2), New York City is the most densely populated major city in the United States. The <br> city is more than twice as populous as Los Angeles, the nation's second-largest city.</p>
+           <div style="margin-top: 90px;">
+            <button type="button" class="btn btn-primary"><i class="fas fa-tags"></i> Secondary</button>
+           <button type="button" class="btn btn-primary"><i class="fas fa-clock"></i> 55 min</button>
+           <button type="button" class="btn btn-primary"><i class="fab fa-google-play"></i> Secondary</button>
+
+           </div>
+
+        </div>
+        
+           
+      </div>
+
+     </section>
+     <div class="container-fluid  d-flex justify-content-center pt-3 pb-3 "style="font-size: 30px;background-color: #000000;  font-weight: 700; ">
+      <h2 style="background: #ad7bd8;
+      background: linear-gradient(to top, #565557 30%, #df3acc 49%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Thank you</h2> 
+    </div>
+    <div class="container-fluid d-flex justify-content-between pt-2 pb-4 icon" style="background-color: #000000;" >
+      <div class="con bg-dark ic1">
+        <h2 style="margin-left: 50px; color: white;">subscribe now</h2>
+        <button class="btn_link"></button>
+        <h5 style="margin-left: 100px; color: #0382bd;">Go To Link</h5>
+
+      </div>
+      <div class="con bg-dark ic2">
+        <h2 style="margin-left: 50px; color: white;">subscribe now</h2>
+        <button class="btn_link2"></button>
+        <h5 style="margin-left: 100px;color: #0487c4;">Go To Link</h5>
+
+      </div>
+      <div class="con bg-dark ic3">
+        <h2 style="margin-left: 50px;color: white;">subscribe now</h2>
+        <button class="btn_link3"></button>
+        <h5 style="margin-left: 100px;color: #0686c2;">Go To Link</h5>
+
+      </div>
+      <div class="con bg-dark ic4">
+        <h2 style="margin-left: 50px;color: white;">subscribe now</h2>
+        <button class="btn_link4"></button>
+        <h5 style="margin-left: 100px;color: #0091d4;">Go To Link</h5>
+
+      </div>
+    </div>
+    <footer class="container-fluid  bg-dark footer-media"  >
+      <div class="d-flex justify-content-between ">
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; "class="line1"></div>
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; " class="line2"></div>
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; " class="line3"></div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="circle d-flex justify-content-start content1 " style="margin-top: 30px; margin-left: 100px;"> 
+          <img src="images/0dcfb548989afdf22afff75e2a46a508.jpg" alt="" width="60px" height="60px" style="border-radius: 50%;box-shadow: rgba(255, 255, 255, 0.451) 0px 54px 55px, rgba(255, 255, 255, 0.264) 0px -12px 30px, rgba(240, 239, 239, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.533) 0px 12px 13px, rgba(248, 248, 248, 0.626) 0px -3px 5px;">
+          <span style="margin-top: 17px; margin-left: 10px; color: rgb(245, 243, 241);">Good company</span>
+        </div>
+        <div class="circle d-flex justify-content-start content2" style="margin-top: 30px; margin-left: 100px;"> 
+          <img src="images/0dcfb548989afdf22afff75e2a46a508.jpg" alt="" width="60px" height="60px" style="border-radius: 50%;box-shadow: rgba(255, 255, 255, 0.451) 0px 54px 55px, rgba(255, 255, 255, 0.264) 0px -12px 30px, rgba(240, 239, 239, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.533) 0px 12px 13px, rgba(248, 248, 248, 0.626) 0px -3px 5px;">
+          <span style="margin-top: 17px; margin-left: 10px; color: rgb(245, 243, 241);">Good company</span>
+        </div>
+        <div class="circle d-flex justify-content-start content3" style="margin-top: 30px; margin-left: 100px;"> 
+          <img src="images/0dcfb548989afdf22afff75e2a46a508.jpg" alt="" width="60px" height="60px" style="border-radius: 50%;box-shadow: rgba(255, 255, 255, 0.451) 0px 54px 55px, rgba(255, 255, 255, 0.264) 0px -12px 30px, rgba(240, 239, 239, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.533) 0px 12px 13px, rgba(248, 248, 248, 0.626) 0px -3px 5px;">
+          <span style="margin-top: 17px; margin-left: 10px; color: rgb(245, 243, 241);">Good company</span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between liners" >
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; " class="liner1"></div>
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; "class="liner2"></div>
+        <div style="width: 420px; height: 1px; background-color: #ebe6ef92; margin-top: 20px; "class="liner3"></div>
+      </div>
+      <div class="container-fluid d-flex justify-content-between content-footer" >
+        <div  >
+          <div style="margin-left: 110px ; margin-top: 30px; color: rgb(246, 246, 246);"class="cont1">
+            <p>Tel : 000-000-000</p>
+            <p>Address : Egypt</p>
+            <p>Fax : 000-000-000</p>
+
+          </div>
+          
+        </div>
+        <div class=" cont2">
+          <div class="links_footer text-primary " >
+            <p>view us</p>
+            <p>Take a look</p>
+            <p>Your health is more important</p>
+
+          </div>
+        </div>
+        
+          <div style= " margin-top: 30px;margin-left: 350px; color: rgb(246, 246, 246);"class="cont3">
+            <p>Tel : 000-000-000</p>
+            <p>Address : Egypt</p>
+            <p>Fax : 000-000-000</p>
+
+          </div>
+        
+      </div>
+      <div class="container-fluid big-line" style="width: 100%; height: 1px; background-color: #ebe6ef92; margin-top: 20px;"></div>
+      <div class="container-fluid  d-flex justify-content-center pt-3 pb-3 end-cont "style="font-size: 30px; font-weight: 700;">
+        <h3 style="background: #ad7bd8;
+        background: linear-gradient(to top, #828086 30%, #f43edf 49%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">COPYRIGHT © 2023 Eng : Laila Mar3y ALL Right Is True</h3> 
+      </div>
+      <div  style="width: 100%; height: 1px; background-color: #ebe6ef92; margin-top: 20px;"class="big-line2"></div>
+
+      
+      
+
+
+
+    </footer>
+     
+     
+      
+      
+      
+      
+      
+     <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+     <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/script.js"></script>
+
+    
+</body>
+</html>
